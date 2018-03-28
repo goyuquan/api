@@ -12,13 +12,14 @@ class Contacts extends Model implements AuthenticatableContract, AuthorizableCon
 {
     use Authenticatable, Authorizable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+
     protected $fillable = [
         'phone', 'name', 'address', 'default'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 
 }
