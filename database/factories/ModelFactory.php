@@ -12,9 +12,9 @@ $factory->define(App\User::class, function () {
     ];
 });
 
-$factory->define(App\User::class, function () {
-    return [
-        'name' => $faker->name,
-        'email' => $faker->email,
-    ];
-});
+// $factory->define(App\User::class, function () {
+//     return [
+//         'name' => $faker->name,
+//         'email' => $faker->email,
+//     ];
+// });
