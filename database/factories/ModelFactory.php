@@ -11,11 +11,11 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
-    return [
-      'phone' => $fake->name,
-      'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm',
-      'name' => $faker->name,
-      'remember_token' => str_random(10),
-    ];
-});
+// $factory->define(App\User::class, function (Faker\Generator $faker) {
+//     return [
+//       'phone' => $fake->name,
+//       'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm',
+//       'name' => $faker->name,
+//       'remember_token' => str_random(10),
+//     ];
+// });
