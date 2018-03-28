@@ -14,7 +14,7 @@ class Contacts extends Model implements AuthenticatableContract, AuthorizableCon
 
 
     protected $fillable = [
-        'phone', 'name', 'address', 'default'
+        'phone', 'name', 'address'
     ];
 
     public function user()
