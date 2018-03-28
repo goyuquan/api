@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,8 +15,14 @@ class DatabaseSeeder extends Seeder
         //     UsersTableSeeder::class,
         // ]);
 
-        factory(App\User::class, 50)->create()->each(function ($u) {
-            $u->contacts()->save(factory(App\Contacts::class)->make());
-        });
+        // factory(App\User::class, 50)->create()->each(function ($u) {
+        //     $u->contacts()->save(factory(App\Contacts::class)->make());
+        // });
+
+        DB::table('users')->insert([
+            'phone' => str_random(11),
+            'password' => bcrypt('secret'),
+            'name' => str_random(10),
+        ]);
     }
 }
