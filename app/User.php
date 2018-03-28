@@ -23,6 +23,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
     public function contacts()
     {
-        return $this->hasMany('App\Phone');
+        return $this->hasMany('App\Contacts');
     }
 }
