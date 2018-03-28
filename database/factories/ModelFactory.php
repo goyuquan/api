@@ -1,13 +1,13 @@
 <?php
 
-// $faker = new Faker\Generator();
-// $faker->addProvider(new Faker\Provider\en_US\PhoneNumber($faker));
-use Faker\Generator as Faker;
+$faker = new Faker\Generator();
+$faker->addProvider(new Faker\Provider\en_US\PhoneNumber($faker));
+// use Faker\Generator as Faker;
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\User::class, function () {
     return [
         'phone' => $faker->name,
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm',
+        'password' => '$2y$10$sr6a1PMteAvWvGZMdmhTPu7m3G9SAj/2uBRovZ3ZiEDwsVPtxs3Vu',
         'name' => $faker->name,
         'remember_token' => str_random(10),
     ];
