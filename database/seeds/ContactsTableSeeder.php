@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
-class UsersTableSeeder extends Seeder
+class ContactsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -21,6 +21,6 @@ class UsersTableSeeder extends Seeder
         //     $u->contacts()->save(factory(App\Contacts::class)->make());
         // });
 
-        factory(User::class, 60)->create();
+        factory(Contact::class, 60)->create();
     }
 }
