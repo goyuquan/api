@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -22,5 +23,6 @@ class UsersTableSeeder extends Seeder
         // });
 
         factory(User::class, 60)->create();
+        factory(App\Contact::class, 60)->create();
     }
 }

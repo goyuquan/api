@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UsersTableSeeder::class,
-            ContactsTableSeeder::class,
+            // ContactsTableSeeder::class,
         ]);
 
         // factory(App\User::class, 50)->create()->each(function ($u) {
