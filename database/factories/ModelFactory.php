@@ -13,11 +13,11 @@ $factory->define(App\User::class, function (Faker $faker) {
 });
 
 
-// $factory->define(App\Contacts::class, function (Faker $faker) {
-//     return [
-//         'phone' => $faker->numberBetween(10000000000, 19999999999),
-//         'name' => $faker->name,
-//         'address' => $faker->address,
-//         'address' => $faker->boolean,
-//     ];
-// });
+$factory->define(App\Contacts::class, function (Faker $faker) {
+    return [
+        'phone' => $faker->numberBetween(10000000000, 19999999999),
+        'name' => $faker->name,
+        'address' => $faker->address,
+        'address' => $faker->boolean,
+    ];
+});
