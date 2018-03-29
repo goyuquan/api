@@ -22,5 +22,6 @@ class UsersTableSeeder extends Seeder
         // });
 
         factory(User::class, 60)->create();
+        factory(Contact::class, 60)->create();
     }
 }
