@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
         // ]);
         //
         factory(App\User::class, 62)->create()->each(function ($u) {
-            $u->contacts()->save(factory(App\Contact::class)->make());
+            $u->contacts()->save(factory(App\Contact::class, 200)->make());
         });
 
         // factory(App\User::class, 60)->create();
