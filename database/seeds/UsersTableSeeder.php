@@ -17,10 +17,10 @@ class UsersTableSeeder extends Seeder
         //     'password' => bcrypt('secret'),
         // ]);
         //
-        // factory(App\User::class, 50)->create()->each(function ($u) {
-        //     $u->contacts()->save(factory(App\Contacts::class)->make());
-        // });
+        factory(App\User::class, 62)->create()->each(function ($u) {
+            $u->contacts()->save(factory(App\Contact::class)->make());
+        });
 
-        factory(App\User::class, 60)->create();
+        // factory(App\User::class, 60)->create();
     }
 }
