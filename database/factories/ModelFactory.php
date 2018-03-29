@@ -18,6 +18,6 @@ $factory->define(App\Contact::class, function (Faker $faker) {
         'phone' => $faker->numberBetween(10000000000, 19999999999),
         'name' => $faker->name,
         'address' => $faker->address,
-        'address' => $faker->boolean,
+        'default' => $faker->boolean,
     ];
 });
