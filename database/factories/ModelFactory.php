@@ -15,6 +15,7 @@ $factory->define(App\User::class, function (Faker $faker) {
 
 $factory->define(App\Contact::class, function (Faker $faker) {
     return [
+        'user_id' => 1,
         'phone' => $faker->numberBetween(10000000000, 19999999999),
         'name' => $faker->name,
         'address' => $faker->address,
